@@ -1,0 +1,855 @@
+/* Header */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #282fe6;
+  height: 80px;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  position: sticky;
+}
+
+.header .left {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.header .left img {
+  width: 75px;
+  height: 75px;
+}
+
+.header .left a {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.header .left h3 {
+  color: white;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.6rem;
+  margin-left: 12px;
+  margin-bottom: 5px;
+}
+
+.header .right {
+  display: flex;
+  align-items: center;
+}
+
+.header .right .icon {
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.header .right .icon img {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.header .right .icon p {
+  color: white;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.header .right .logout {
+  margin-right: 20px;
+}
+
+.header .right .logout button {
+  color: white;
+  background-color: black;
+  padding: 9px;
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.header .right .logout button:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Dashboard */
+
+.sidenav {
+  background-color: #282fe6;
+  height: 100%;
+  width: 190px;
+  left: 0;
+  position: fixed;
+}
+
+.sidenav div {
+  width: 100%;
+  height: 50px;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.412);
+}
+
+.sidenav div:nth-child(9) {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.412);
+}
+
+.sidenav div a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  width: 95%;
+  height: 95%;
+  line-height: 45px;
+  text-align: center;
+}
+
+.sidenav div a:hover,
+.sidenav div:hover,
+.sidenav .active {
+  background-color: #979ae8f1;
+  font-size: large;
+  transition: 0.3s ease;
+}
+
+main {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.dashboard {
+  margin-left: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.head {
+  margin-left: 200px;
+}
+
+.dashboard .info {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  height: 150px;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0px 10px 0px;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: white;
+}
+
+.dashboard .info .num h1 {
+  margin-bottom: 40px;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.dashboard .info .num h3 {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.dashboard .info .icon img {
+  width: 60px;
+  height: 70px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.dashboard #admin {
+  background-color: rgb(31, 175, 31);
+}
+
+.dashboard #doctor {
+  background-color: blue;
+}
+
+.dashboard #patient {
+  background-color: orangered;
+}
+
+.dashboard #report {
+  background-color: purple;
+}
+
+.dashboard #job {
+  background-color: rgb(211, 17, 49);
+}
+
+.dashboard #income {
+  background-color: yellowgreen;
+}
+
+.dashboard #msg {
+  background-color: rgb(48, 160, 160);
+}
+
+.dashboard #dis {
+  background-color: grey;
+}
+
+/* Administrator */
+
+.admininfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.alladmin {
+  margin-left: 200px;
+  width: 50%;
+  overflow-x: auto;
+}
+
+.alladmin table {
+  margin-top: 15px;
+  margin-left: 10px;
+  width: 75%;
+  background-color: aqua;
+}
+
+.alladmin table th:nth-child(1) {
+  width: 15%;
+}
+
+.alladmin table th:nth-child(2) {
+  width: 30%;
+}
+
+.alladmin table th:nth-child(3) {
+  width: 30%;
+}
+
+.alladmin table th:nth-child(4) {
+  width: 25%;
+}
+
+.alladmin table th,
+.alladmin table td {
+  padding: 10px;
+}
+
+.alladmin table td button {
+  background-color: rgb(228, 24, 24);
+  color: white;
+  padding: 7px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+  width: 90%;
+  height: 40px;
+}
+
+.alladmin table td button:hover {
+  background-color: black;
+}
+
+.addadmin {
+  width: 40%;
+}
+
+.addadmin .form {
+  margin-top: 15px;
+}
+
+.addadmin .form form .group {
+  padding-bottom: 30px;
+}
+
+.addadmin .form form .group label {
+  font-size: large;
+}
+
+.addadmin .form form .group input {
+  padding: 7px 5px 7px;
+  margin-left: 5px;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.addadmin .form form #btn {
+  width: 20%;
+  height: 38px;
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border-style: none;
+}
+
+.addadmin .form form #btn:hover {
+  background-color: #282fe6;
+  color: black;
+}
+
+/* Profile */
+
+.adminprof .head {
+  margin-left: 200px;
+}
+
+.adminprof .form {
+  margin-left: 220px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.adminprof .form .left {
+  width: 50%;
+}
+
+.adminprof .form .right {
+  width: 50%;
+  margin-left: 20px;
+}
+
+.adminprof .form .left form img {
+  width: 260px;
+  height: 250px;
+  background-color: #282fe6;
+  border-radius: 10px;
+}
+
+.adminprof .form .left form .group {
+  margin-top: 20px;
+}
+
+.adminprof .form .left form .group input,
+.adminprof .form .right form .group input,
+.adminprof .form .right .group input {
+  margin-left: 7px;
+}
+
+.adminprof .form .left form .group #btnu,
+.adminprof .form .right form .group #btnu {
+  padding: 5px 7px 5px;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-style: none;
+}
+
+.adminprof .form .left form .group #btnu:hover,
+.adminprof .form .right form .group #btnu:hover {
+  background-color: #282fe6;
+  color: black;
+}
+
+.adminprof .form .left form .group #change,
+.adminprof .form .right form .group #change,
+.adminprof .form .right .group #change {
+  margin-left: 5px;
+  padding: 4px 10px 4px;
+  width: 50%;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.adminprof .form .right form p {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+/* Profile */
+
+.jobrequest .head {
+  margin-left: 200px;
+}
+
+.jobrequest .head h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.jobrequest .info {
+  margin-left: 210px;
+  margin-top: 40px;
+  margin-right: 15px;
+  overflow-x: auto;
+}
+
+.jobrequest .info table {
+  width: 100%;
+  background-color: aqua;
+}
+
+.jobrequest .info table th,
+.jobrequest .info table td {
+  padding: 5px;
+}
+
+.jobrequest .info table td button {
+  padding: 7px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+  width: 70%;
+  height: 40px;
+}
+
+.jobrequest .info table td #app {
+  background-color: green;
+  color: white;
+  width: 80%;
+  padding: 5px;
+}
+
+.jobrequest .info table td #rej {
+  background-color: rgb(233, 26, 26);
+  color: white;
+  margin-top: 7px;
+  width: 80%;
+}
+
+/*  Add Doctor   */
+
+.jobrequest .adddoc {
+  margin-left: 700px;
+  margin-top: 80px;
+  align-items: center;
+}
+
+.jobrequest .adddoc button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #282fe6;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+  border-style: double;
+}
+
+.jobrequest .adddoc button:hover {
+  background-color: white;
+  color: black;
+  border-style: double;
+}
+
+.adminprof .form .right .group select {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.adminprof .form .right .group textarea {
+  width: 50%;
+  height: 80px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.adminprof .form .right #btnu {
+  background-color: black;
+  color: white;
+  padding: 7px;
+  cursor: pointer;
+  border-style: double;
+  border-radius: 5px;
+  width: 15%;
+}
+
+.adminprof .form .right #btnu:hover {
+  background-color: #282fe6;
+  color: white;
+  transition: 0.4s ease;
+}
+
+/*  Edit Doctor   */
+
+.editdoc {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.editdoc .details {
+  margin-left: 210px;
+}
+
+.editdoc .details h2 {
+  margin-bottom: 30px;
+}
+
+.editdoc .details p {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.editdoc .form {
+  width: 40%;
+  margin-top: 40px;
+}
+
+.editdoc .form h4 {
+  margin-bottom: 20px;
+}
+
+.editdoc .form form {
+  font-weight: bold;
+}
+
+.editdoc .form form input {
+  width: 35%;
+  padding: 5px 7px 5px;
+  border-radius: 4px;
+}
+
+.editdoc .form form #btn {
+  width: 20%;
+  background-color: black;
+  color: white;
+  border-style: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.editdoc .form form #btn:hover {
+  background-color: #282fe6;
+  color: black;
+}
+
+/* View Patient */
+
+.view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.view .head {
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.view div {
+  margin-left: 200px;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.view div img {
+  width: 300px;
+  height: 50x;
+  border-radius: 10px;
+}
+
+/* Records */
+
+.adminprof .yourprof table {
+  width: 95%;
+  background-color: aqua;
+}
+
+.adminprof .yourprof table th,
+.adminprof .yourprof table td {
+  padding: 5px;
+}
+
+.adminprof #inhead {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.adminprof #recs {
+  margin-left: 200px;
+}
+
+/* Media Query */
+
+@media (max-width: 1200px) {
+  .sidenav {
+    width: 180px;
+  }
+
+  .dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .dashboard .info {
+    width: 210px;
+  }
+
+  .jobrequest .info table th,
+  .jobrequest .info table td {
+    padding: 1px;
+  }
+
+  .jobrequest .adddoc {
+    margin-left: 550px;
+  }
+}
+
+@media (max-width: 850px) {
+  .dashboard {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sidenav {
+    width: 160px;
+  }
+
+  .admininfo {
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .alladmin {
+    margin-left: 200px;
+    width: 80%;
+  }
+
+  .addadmin {
+    margin-left: 200px;
+    width: 80%;
+    margin-top: 60px;
+  }
+
+  .adminprof .form {
+    flex-direction: column;
+  }
+
+  .adminprof .form .left {
+    width: 80%;
+  }
+
+  .adminprof .form .right {
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+
+  .header .left {
+    margin-left: 10px;
+  }
+
+  .header .left h3 {
+    font-size: 1.2rem;
+    margin-left: 9px;
+  }
+
+  .header .right .icon {
+    margin-right: 60px;
+  }
+
+  .header .right .icon p {
+    font-size: smaller;
+  }
+
+  .header .right .logout {
+    margin-right: 20px;
+  }
+
+  .jobrequest .adddoc {
+    margin-left: 450px;
+  }
+  .adminprof .form .right form .group #btnu {
+    width: 20%;
+  }
+
+  .jobrequest .head {
+    margin-left: 180px;
+  }
+  .jobrequest .info {
+    margin-left: 180px;
+  }
+
+  .editdoc {
+    flex-direction: column;
+  }
+
+  .editdoc .form {
+    margin-left: 210px;
+    margin-bottom: 40px;
+  }
+
+  .editdoc .form form #btn {
+    width: 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 150px;
+  }
+
+  .sidenav {
+    width: 150px;
+  }
+
+  .dashboard .info {
+    width: 180px;
+  }
+
+  .head {
+    margin-left: 160px;
+  }
+
+  .alladmin {
+    margin-left: 160px;
+  }
+
+  .addadmin {
+    margin-left: 160px;
+  }
+
+  .jobrequest .adddoc {
+    margin-left: 270px;
+  }
+
+  .adminprof .form {
+    margin-left: 160px;
+  }
+
+  .adminprof .form .right form .group #btnu {
+    width: 20%;
+  }
+
+  .adminprof .form .right {
+    margin-left: 0px;
+  }
+
+  .adminprof .head {
+    margin-left: 160px;
+  }
+
+  .jobrequest .head {
+    margin-left: 160px;
+  }
+  .jobrequest .info {
+    margin-left: 160px;
+  }
+
+  .view div {
+    margin-left: 160px;
+  }
+
+  .header .left {
+    margin-left: 10px;
+  }
+
+  .header .left h3 {
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+
+  .header .right .icon {
+    margin-right: 40px;
+  }
+
+  .header .right .icon p {
+    font-size: smaller;
+  }
+
+  .header .right .logout {
+    margin-right: 20px;
+  }
+
+  .header .left img {
+    width: 65px;
+    height: 75px;
+  }
+}
+
+@media (max-width: 415px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+    margin-left: 150px;
+  }
+
+  .sidenav {
+    width: 130px;
+  }
+
+  .dashboard .info {
+    width: 200px;
+  }
+
+  .head {
+    margin-left: 133px;
+  }
+
+  .alladmin {
+    margin-left: 133px;
+  }
+
+  .addadmin {
+    margin-left: 133px;
+  }
+
+  .jobrequest .adddoc {
+    margin-left: 200px;
+  }
+
+  .adminprof .form {
+    margin-left: 133px;
+  }
+
+  .adminprof .form .right form .group #btnu {
+    width: 35%;
+  }
+
+  .adminprof .form .right {
+    margin-left: 0px;
+  }
+
+  .adminprof .head {
+    margin-left: 133px;
+  }
+
+  .jobrequest .head {
+    margin-left: 133px;
+  }
+  .jobrequest .info {
+    margin-left: 133px;
+  }
+
+  .view div {
+    margin-left: 133px;
+  }
+
+  .header .left {
+    margin-left: 10px;
+  }
+
+  .header .left h3 {
+    font-size: 1rem;
+    margin-left: 5px;
+  }
+
+  .header .right .icon {
+    margin-right: 20px;
+  }
+
+  .header .right .icon p {
+    font-size: smaller;
+  }
+
+  .header .right .logout {
+    margin-right: 10px;
+  }
+
+  .header .left img {
+    width: 50px;
+    height: 75px;
+  }
+}
