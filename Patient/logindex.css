@@ -1,0 +1,168 @@
+body {
+  background-image: url("bgmg.webp");
+  background-size: cover;
+}
+
+.container {
+  margin: 70px 400px 135px;
+  background-color: white;
+  padding: 0px 15px 25px;
+  border-radius: 20px;
+}
+
+.container .up {
+  background-color: #282fe6;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.container .up img {
+  width: 90px;
+  height: 90px;
+}
+
+.container .up h1 {
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.container .up span {
+  font-size: 50px;
+  margin-left: 10px;
+  color: white;
+}
+
+.container .form {
+  margin-top: 70px;
+}
+
+.container .form form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-right: 20px;
+  margin-top: -30px;
+}
+
+.container .form form label i {
+  font-size: small;
+  margin-right: 5px;
+  color: #282fe6;
+}
+
+.container .form form label input {
+  padding: 10px 7px 10px;
+  width: 90%;
+  border: none;
+}
+
+.container .form form label input:focus {
+  outline: none;
+}
+
+.container .form form #btn {
+  padding: 10px 14px 10px;
+  background-color: black;
+  border-style: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  margin-right: 50px;
+  align-self: center;
+}
+
+.container .form form #btn:hover {
+  background-color: #282fe6;
+}
+
+.container .form .fp {
+  margin-left: 50px;
+}
+
+.container .form .su {
+  text-align: end;
+  margin-right: 20px;
+}
+
+.container .form p a {
+  text-decoration: none;
+  color: #282fe6;
+  cursor: pointer;
+}
+
+.container .form p a:hover {
+  color: black;
+}
+
+.container .form form label {
+  border: 1px solid black;
+  border-width: 50%;
+  padding: 8px 10px 8px;
+  border-radius: 10px;
+}
+
+.container .error {
+  height: 20px;
+}
+
+.container .error p {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.plogin #reset,
+.plogin #plog {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.plogin #plog {
+  margin-top: 70px;
+}
+.container .form form #backbtn {
+  padding: 10px 14px 10px;
+  background-color: #282fe6;
+  border-style: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 130px;
+  height: 40px;
+  margin-right: 50px;
+  margin-top: 40px;
+}
+
+.container .form form #backbtn:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin: 30px 100px 100px;
+  }
+}
+
+@media (max-width: 100px) {
+  .container {
+    margin: 30px 80px 150px;
+  }
+}
+
+@media (max-width: 850px) {
+  .container {
+    margin: 30px 50px 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 30px 10px 150px;
+  }
+}
